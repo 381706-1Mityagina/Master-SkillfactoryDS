@@ -4,7 +4,7 @@ From [Skillfactory Data Science cource](https://apps.skillfactory.ru/learning) +
 
 ## Проекты
 * [Проект 0. Игра: Угадай число](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/project_0)
-* [Проект 1. __________________](__)
+* [Проект 1. Анализ резюме из Head Hunter](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/project_1)
 * [Проект 2. __________________](__)
 
 ## Задачи с семинаров
