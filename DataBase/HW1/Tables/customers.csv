@@ -1,0 +1,21 @@
+customer_id,first_name,last_name,gender,DOB,job_title,job_industry_category,wealth_segment,deceased_indicator,owns_car,address,postcode,state,country,property_valuation
+600,Duke,Allnatt,Male,1974-05-10,Nurse,Argiculture,Mass Customer,N,Yes,07 Pepper Wood Way,2750,NSW,Australia,8
+619,Finn,Dahlman,Male,1977-08-14,Speech Pathologist,Property,Mass Customer,N,No,4 Loeprich Avenue,4022,QLD,Australia,3
+109,Cody,Blabey,Male,1978-12-11,Marketing Assistant,,Affluent Customer,N,Yes,15239 Northwestern Point,4300,QLD,Australia,4
+1707,Alfonso,Readett,Male,1994-01-02,Cost Accountant,Financial Services,High Net Worth,N,No,2 Dwight Point,4133,QLD,Australia,5
+1531,Evaleen,Pusey,Female,1966-03-17,Administrative Assistant III,Financial Services,Mass Customer,N,Yes,2 Saint Paul Parkway,2040,NSW,Australia,12
+809,Nevsa,Washtell,Female,1977-10-23,Biostatistician III,Health,Mass Customer,N,No,7175 Orin Junction,2088,NSW,Australia,12
+2785,Gennifer,Baily,Female,1981-07-31,Human Resources Manager,Financial Services,Mass Customer,N,No,724 West Park,2112,NSW,Australia,11
+769,Cameron,Letherbury,Male,1961-12-28,Analog Circuit Design manager,IT,Mass Customer,N,No,88 Bay Drive,4305,QLD,Australia,3
+2072,Margie,Tillyer,Female,1960-04-20,Environmental Specialist,Financial Services,Mass Customer,N,Yes,63832 Maple Wood Court,3172,VIC,Australia,9
+723,Madelina,Marte,Female,1963-08-20,Food Chemist,Health,Mass Customer,N,Yes,80027 Ryan Terrace,3551,Victoria,Australia,3
+656,Marty,Lebreton,Female,1978-11-17,Automation Specialist III,Manufacturing,High Net Worth,N,Yes,14 Autumn Leaf Avenue,2570,NSW,Australia,10
+3486,Reece,Crewther,Male,1956-07-25,Business Systems Development Analyst,Manufacturing,Mass Customer,N,No,3609 Shelley Road,2126,NSW,Australia,10
+3303,Ced,Cuell,Male,1967-02-02,Structural Engineer,Telecommunications,Affluent Customer,N,Yes,1172 Mesta Center,4740,QLD,Australia,2
+116,Scottie,Swiffen,Male,1999-02-05,Assistant Professor,Manufacturing,Affluent Customer,N,Yes,7 Carberry Crossing,2485,New South Wales,Australia,2
+2105,Terrance,Goligher,Male,1971-11-11,Food Chemist,Health,High Net Worth,N,Yes,7 Porter Parkway,2261,NSW,Australia,8
+3011,Robena,Barks,Female,1994-05-11,Staff Scientist,Financial Services,High Net Worth,N,No,2942 Swallow Trail,4214,QLD,Australia,9
+696,Arch,Gaitskill,Male,1966-02-06,Programmer Analyst II,,Affluent Customer,N,Yes,6046 Sheridan Way,2322,NSW,Australia,3
+2276,Stormy,Caveney,Female,1985-10-06,Desktop Support Technician,,Mass Customer,N,Yes,054 Mesta Drive,3620,VIC,Australia,1
+1372,Rockie,Wheldon,Male,1980-07-02,Computer Systems Analyst III,Manufacturing,Affluent Customer,N,No,64201 Bonner Point,3169,VIC,Australia,5
+156,Shayla,Rimmington,Female,1979-09-09,Cost Accountant,Financial Services,Mass Customer,N,Yes,860 Hintze Lane,2154,NSW,Australia,11

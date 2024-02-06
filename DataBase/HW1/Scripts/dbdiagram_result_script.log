@@ -1,0 +1,42 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table customer {
+  customer_id integer [primary key]
+  first_name varchar
+  last_name varchar
+  gender varchar
+  DOB date
+  job_title varchar
+  job_industry_category varchar
+  wealth_segment varchar
+  deceased_indicator varchar
+  owns_car bool
+  address varchar
+  postcode varchar
+  state varchar
+  country varchar
+  property_valuation integer
+}
+
+Table transaction {
+  transaction_id integer [primary key]
+  product_id_unique integer
+  customer_id integer
+  transaction_date datetime
+  online_order bool
+  order_status varchar
+}
+
+Table product {
+  product_id_unique integer [primary key, not null, unique]
+  brand text
+  product_line varchar
+  product_class varchar
+  product_size varchar
+  list_price integer
+  standard_cost integer
+}
+
+Ref: customer.customer_id < transaction.customer_id
+Ref: transaction.product_id_unique < product.product_id_unique
