@@ -23,9 +23,9 @@
 
 #### 👩‍💻 Структура базы данных. Нормализация.
 
-Итоговый вариант структуры БД, который можно увидеть в [dbdiagram_result_diagram.png](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/dbdiagram_result_diagram.png), содержит 3 таблицы : customer, transaction (обе находятся в оригинальном наборе данных в виде двух отдельных литов) и product (было решено вынести product в отдельную таблицу, тк довольно много деталей относятся к купленному продукту).
+Итоговый вариант структуры БД, который можно увидеть в [dbdiagram_result_diagram.png](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbdiagram_result_diagram.png), содержит 3 таблицы : customer, transaction (обе находятся в оригинальном наборе данных в виде двух отдельных литов) и product (было решено вынести product в отдельную таблицу, тк довольно много деталей относятся к купленному продукту).
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/dbdiagram_result_diagram.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbdiagram_result_diagram.png)
 
 >       Для приведения БД к нормальной форме необходимо:
 >        - Объединить имеющиеся данные в группы.
@@ -34,11 +34,11 @@
 
 🚩 Первая нормальная форма (1НФ)
 >       Для того чтобы таблица была в 1НФ все атрибуты в таблице должны быть простыми, все сохраняемые данные на пересечении столбцов и строк — содержать лишь скалярные значения.
-Атрибуты являются простыми, все используемые домены содержать только скалярные значения, нет повторений строк в таблицах -> **1НФ наблюдается**
+Атрибуты являются простыми, все используемые записи содержат только скалярные значения, нет повторений строк в таблицах -> **1НФ наблюдается**
 
 🚩 Вторая нормальная форма (2НФ)
 >       Отношения будут соответствовать 2НФ, если сама БД находится в 1НФ, а каждый столбец, который не является ключом, зависит от первичного ключа.
-Данное условие не выполнялось для связанных с товаром стоблов (для оригинальной таблицы с транзакциями). Поэтому было решено вынести эту тему в отдельную таблицу.
+Данное условие не выполнялось для связанных с товаром стоблцов (для оригинальной таблицы с транзакциями). Поэтому было решено вынести эту тему в отдельную таблицу.
 
 🚩 Третья нормальная форма (3НФ)
 >       Таблица должна находиться во 2НФ, плюс любой столбец, который не является ключом, должен зависеть лишь от первичного ключа.
@@ -50,24 +50,23 @@
 
 - **Transaction**. Все +- просто с данной таблицей.
 
-- **Product**. Было решено отнести list_price и standard_cost к продукту, а не транзакции. Кроме того был создан новый id (составной), хранящий в себе информацию о {brand, product_line, product_class, product_size}.
-В талице product_id не является уникальным ключом, поэтому было решено добавить `product_id_unique serial UNIQUE PRIMARY KEY NOT NULL`. В таком случае БД сгенерирует уникальный id для каждой новой записи автоматически.
+- **Product**. Было решено отнести list_price и standard_cost к продукту, а не транзакции.
+В таблице product_id не является уникальным ключом, поэтому показалось логичным добавить `product_id_unique serial UNIQUE PRIMARY KEY NOT NULL`. В таком случае БД сгенерирует уникальный id для каждой новой записи автоматически.
+
+Рассматривался также такой вариант структуры БД (параметры, значения которых ограничены, вынесены в отдельные словари). Однако, хотелось не усложнять структуру таким образом (как минимум в этом задании).
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbdiagram_optional_diagram.png)
 
 
-Рассматривался также такой вариант структуры БД (параметры, значения которых ограничены, вынесены в отдельные словари). Однако, было принято решение не усложнять структуру таким образом (как минимум в этом задании).
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbdiagram_optional_diagram.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_customers_select.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_customers.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram_customers_select.png)
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram_customers.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_products_select.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_products.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram_products_select.png)
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram_products.png)
-
-
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram_transactions_select.png)
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1/Diagrams/dbeaver_diagram_transactions.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_transactions_select.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_transactions.png)
