@@ -5,7 +5,7 @@
 #### 🌟 Цель домашней работы
 Научиться работать с основными операторами PostgreSQL, фильтровать таблицы по разным условиям, писать вложенные запросы, объединять таблицы.
 #### 🌟 Формулировка задания
-Дано два csv-файла с данными о клиентах ((customer.csv)[https://lms.skillfactory.ru/asset-v1:SkillFactory+MFTIDS+SEP2023+type@asset+block@customer.csv]) и их транзакциях ((transaction.csv)[https://lms.skillfactory.ru/asset-v1:SkillFactory+MFTIDS+SEP2023+type@asset+block@transaction.csv]).
+Дано два csv-файла с данными о клиентах ([customer.csv](https://lms.skillfactory.ru/asset-v1:SkillFactory+MFTIDS+SEP2023+type@asset+block@customer.csv)) и их транзакциях ([transaction.csv](https://lms.skillfactory.ru/asset-v1:SkillFactory+MFTIDS+SEP2023+type@asset+block@transaction.csv)).
 Необходимо выполнить следующее:
 - Создать таблицы со следующими структурами и загрузить данные из csv-файлов. Детали приведены ниже.
 - Выполнить следующие запросы:
@@ -21,7 +21,7 @@
 - Cсылку на репозиторий, в котором будут ноутбук в Jupyter с решением или sql-скрипты на PostgreSQL со скринами из DBeaver.
 
 # Процесс/комментарии
-HW2-Mitiagina-Daria-Sergeevna\
+
 Весь процесс работы отображен в [Jupyter notebook - Scripts/HW2-Mitiagina-Daria-Sergeevna.ipynb](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW2-Mitiagina-Daria-Sergeevna/Scripts/HW2-Mitiagina-Daria-Sergeevna.ipynb).
 
 Скриншоты из DBeaver лежат в [папке Diagrams-scrinshots](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW2-Mitiagina-Daria-Sergeevna/Diagrams-scrinshots).
