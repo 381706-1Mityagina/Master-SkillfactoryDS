@@ -3,6 +3,6 @@
 From [Skillfactory Data Science cource](https://apps.skillfactory.ru/learning) + **МФТИ**
 
 ## Проекты
-* [Проект 0. Создание и нормализация базы данных](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1)
-* [Проект 1. __________________](__)
+* [Проект 0. Создание и нормализация базы данных](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW1-Mitiagina-Daria-Sergeevna)
+* [Проект 1. Основные операторы PostgreSQL](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW2-Mitiagina-Daria-Sergeevna)
 * [Проект 2. __________________](__)
