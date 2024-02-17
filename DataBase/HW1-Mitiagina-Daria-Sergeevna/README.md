@@ -23,9 +23,9 @@
 
 #### 👩‍💻 Структура базы данных. Нормализация.
 
-Итоговый вариант структуры БД, который можно увидеть в [dbdiagram_result_diagram.png](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbdiagram_result_diagram.png), содержит 3 таблицы : customer, transaction (обе находятся в оригинальном наборе данных в виде двух отдельных литов) и product (было решено вынести product в отдельную таблицу, тк довольно много деталей относятся к купленному продукту).
+Итоговый вариант структуры БД, который можно увидеть в [dbdiagram_result_diagram.png](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbdiagram_result_diagram.png), содержит 3 таблицы : customer, transaction (обе находятся в оригинальном наборе данных в виде двух отдельных литов) и product (было решено вынести product в отдельную таблицу, тк довольно много деталей относятся к купленному продукту).
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbdiagram_result_diagram.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbdiagram_result_diagram.png)
 
 >       Для приведения БД к нормальной форме необходимо:
 >        - Объединить имеющиеся данные в группы.
@@ -54,19 +54,19 @@
 В таблице product_id не является уникальным ключом, поэтому показалось логичным добавить `product_id_unique serial UNIQUE PRIMARY KEY NOT NULL`. В таком случае БД сгенерирует уникальный id для каждой новой записи автоматически.
 
 Рассматривался также такой вариант структуры БД (параметры, значения которых ограничены, вынесены в отдельные словари). Однако, хотелось не усложнять структуру таким образом (как минимум в этом задании).
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbdiagram_optional_diagram.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbdiagram_optional_diagram.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_customers_select.png)
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_customers.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram_customers_select.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram_customers.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_products_select.png)
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_products.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram_products_select.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram_products.png)
 
 
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_transactions_select.png)
-![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1/Diagrams/dbeaver_diagram_transactions.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram_transactions_select.png)
+![](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/blob/master/DataBase/HW1-Mitiagina-Daria-Sergeevna/Diagrams/dbeaver_diagram_transactions.png)
