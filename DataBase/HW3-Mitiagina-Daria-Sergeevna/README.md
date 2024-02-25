@@ -21,6 +21,6 @@
 
 # Процесс/комментарии
 
-Весь процесс работы отображен в [Jupyter notebook - Scripts/HW2-Mitiagina-Daria-Sergeevna.ipynb](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW3-Mitiagina-Daria-Sergeevna/Scripts/HW3-Mitiagina-Daria-Sergeevna.ipynb).
+Весь процесс работы отображен в [Jupyter notebook - Scripts/HW3-Mitiagina-Daria-Sergeevna.ipynb](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW3-Mitiagina-Daria-Sergeevna/Scripts/HW3-Mitiagina-Daria-Sergeevna.ipynb).
 
 Скриншоты из DBeaver лежат в [папке Diagrams-scrinshots](https://github.com/381706-1Mityagina/Master-SkillfactoryDS/tree/master/DataBase/HW3-Mitiagina-Daria-Sergeevna/Diagrams-scrinshots).
