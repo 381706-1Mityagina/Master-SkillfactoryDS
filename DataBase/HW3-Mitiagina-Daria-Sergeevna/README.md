@@ -1,4 +1,4 @@
-# Master-SkillfactoryDS DataBase homework collection. Задание 2
+# Master-SkillfactoryDS DataBase homework collection. Задание 3
 
 #### 🌟 Тема домашней работы
 Группировка данных и оконные функции.
