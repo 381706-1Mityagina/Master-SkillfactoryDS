@@ -38,9 +38,6 @@ from luigi.util import requires
 #       Теперь мы имеем разложенные по папкам tsv-файлы с таблицами, которые удобно читать. Изначальный текстовый файл можно удалить, убедившись,
 #           что все предыдущие этапы успешно выполнены.
 
-SAVE_PATH = os.getcwd() + "/dataset"
-DEFAULT_DATASET_NAME = 'GSE68849'
-
 log = logging.getLogger('luigi-interface')
 
 # Основные шаги пайплайна:
@@ -54,17 +51,20 @@ log = logging.getLogger('luigi-interface')
 # Шаг 1.
 #   Скачать supplementary-файлы датасета GSE68849 из GEO → cтраница датасета. Архив называется GSE68849_RAW.tar.
 class DownloadData(luigi.Task):
+
+    WHERE_TO_SAVE_PATH = os.getcwd() + "/dataset"
+
     # В задаче на скачивание имя датасета должно быть параметром.
     # Ссылку на скачивание можно захардкодить.
-    dataset_name = luigi.Parameter(default=DEFAULT_DATASET_NAME)
+    dataset_name = luigi.Parameter(default="GSE68849")
     dataset_link = 'https://www.ncbi.nlm.nih.gov/geo/download/?acc={dataset_name}&format=file'
 
     def output(self):
-        return luigi.LocalTarget(f'{self.SAVE_PATH}/{self.dataset_name}.tar')
+        return luigi.LocalTarget(f'{self.WHERE_TO_SAVE_PATH}/{self.dataset_name}.tar')
 
     def run(self):
+        dataset_link = self.dataset_link.format(dataset_name=self.dataset_name)
         log.info(f"[INFO] Downloading archive {dataset_link} is in progress ...")
-        dataset_link = self.link.format(dataset_name=self.dataset_name)
 
         response = requests.get(dataset_link)
         response.raise_for_status()
@@ -86,8 +86,8 @@ class ArchivesExtract(luigi.Task):
             if os.path.exists(tar_file):
                 tarf = tarfile.open(tar_file)
                 files = tarf.getnames()
-                return (luigi.LocalTarget(f"data/{self.dataset_name}/archives"), 
-                       [luigi.LocalTarget(f"data/{self.dataset_name}/archives/{file_name}") for file_name in files])
+                return (luigi.LocalTarget(f"dataset/{self.dataset_name}/archives"),
+                       [luigi.LocalTarget(f"dataset/{self.dataset_name}/archives/{file_name}") for file_name in files])
 
     def run(self):
         os.makedirs(self.output()[0].path, exist_ok=True)
@@ -115,8 +115,8 @@ class ExtractFiles(luigi.Task):
             for file in input_files:
                 if file.endswith('.gz'):
                     base_name = os.path.basename(file).rsplit('.', 2)[0]
-                    SAVE_PATH = os.path.join(target_dir_path, base_name, os.path.basename(file)[:-3])
-                    output_files.append(SAVE_PATH)
+                    target_path = os.path.join(target_dir_path, base_name, os.path.basename(file)[:-3])
+                    output_files.append(target_path)
 
             return (luigi.LocalTarget(target_dir_path), [luigi.LocalTarget(file_name) for file_name in output_files])
 
